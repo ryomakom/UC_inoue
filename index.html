@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="朝日新聞デジタル企画報道部　小宮山亮磨 @ryomakom" />
+
+<meta name="date" content="2023-05-21" />
+
+<title>旧統一教会が参院選に与えた影響の推定</title>
+
+<script src="site_libs/header-attrs-2.19/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="site_style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">旧統一教会が参院選に与えた影響の推定</h1>
+<h4 class="author">朝日新聞デジタル企画報道部　小宮山亮磨 <span
+class="citation">@ryomakom</span></h4>
+<h4 class="date">2023-05-21</h4>
+
+</div>
+
+
+<div id="この文書について" class="section level2">
+<h2>この文書について</h2>
+<p>　2023年度の日本選挙学会総会でのポスター発表「<a
+href="https://github.com/ryomakom/UC_inoue/blob/main/%E9%81%B8%E6%8C%99%E5%AD%A6%E4%BC%9A%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC.pdf">旧統一教会が参院選に与えた影響の推定</a>」の分析手法や結果について、もとになったデータやRのコードとともに公開する。詳細はポスターに譲るが、自民党の井上義行氏（安倍晋三元首相の元秘書官）の得票を分析することで、旧統一教会が参院選に与えた影響を定量的に見積もろうとしている。</p>
+</div>
+<div id="必要なパッケージをとってくる" class="section level2">
+<h2>必要なパッケージをとってくる</h2>
+<pre class="r"><code>library(tidyverse)
+library(modelsummary)
+library(MatchIt)
+library(rgenoud)
+library(cobalt)</code></pre>
+</div>
+<div id="元となるデータをとってきて加工する" class="section level2">
+<h2>元となるデータをとってきて加工する</h2>
+<p>　参院選の得票を記録した朝日新聞の社内データベースと、旧統一教会がウェブサイトで公表している「家庭教会」という教団施設の住所を元に作ったCSVファイルを読み込む。教団施設の有無は「UC有無」とタグ付けしている。「HS有無」「HC有無」はそれぞれ「幸福の科学」の施設と保健所の有無を意味しているが、今回の分析には使っていない。その他のデータは政府の「社会・人口統計体系」をeStatから取得して加工したもの。</p>
+<pre class="r"><code>inoue &lt;- read_csv(&quot;data/UC_inoue.csv&quot;) %&gt;%
+  mutate(inoue_ratio=井上得票*100/投票者数, # 井上氏の得票率と
+         ldp_ratio=(自民得票計-井上得票)*100/投票者数) %&gt;% # 井上氏を除いた自民の得票率を算出
+  dplyr::select(-井上得票,-自民得票計,-投票者数) %&gt;%
+  pivot_wider(names_from = 年,
+              values_from = c(inoue_ratio,
+                              ldp_ratio)) %&gt;%
+  mutate(inoue_ratio_change=inoue_ratio_2022-inoue_ratio_2019, # 井上氏の得票率変化量と
+         ldp_ratio_change=ldp_ratio_2022-ldp_ratio_2019) %&gt;% # 自民得票率の変化量を算出
+  dplyr::select(-inoue_ratio_2022,
+                -inoue_ratio_2019,
+                -ldp_ratio_2022,
+                -ldp_ratio_2019) %&gt;% 
+  dplyr::select(都道府県市区町村,
+                inoue_ratio_change,
+                UC有無,
+                HS有無,
+                HC有無,
+                ldp_ratio_change,
+                `A2301_住民基本台帳人口（総数）`,
+                everything()) %&gt;% #列の順番並べ替え
+  select_if(negate(anyNA)) #NAのある列を除外</code></pre>
+<pre><code>## Rows: 3792 Columns: 167
+## ── Column specification ──────────────────────
+## Delimiter: &quot;,&quot;
+## chr   (1): 都道府県市区町村
+## dbl (166): 年, 自民得票計, 井上得票, 投票者数, UC有無, HS有無, HC有無, A2101_住民基本台帳人口（日本人）, A210...
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
+<pre class="r"><code>glimpse(inoue)</code></pre>
+<pre><code>## Rows: 1,896
+## Columns: 73
+## $ 都道府県市区町村                                   &lt;chr&gt; &quot;青森県青森市&quot;, &quot;青…
+## $ inoue_ratio_change                                 &lt;dbl&gt; 0.120621117, 0.1634…
+## $ UC有無                                             &lt;dbl&gt; 1, 1, 1, 0, 0, 1, 0…
+## $ HS有無                                             &lt;dbl&gt; 1, 0, 1, 0, 0, 0, 0…
+## $ HC有無                                             &lt;dbl&gt; 1, 1, 1, 0, 1, 1, 0…
+## $ ldp_ratio_change                                   &lt;dbl&gt; 2.8740391, 4.305873…
+## $ `A2301_住民基本台帳人口（総数）`                   &lt;dbl&gt; 278446, 168479, 225…
+## $ `A2101_住民基本台帳人口（日本人）`                 &lt;dbl&gt; 277378, 167724, 224…
+## $ `A210101_住民基本台帳人口（日本人）（男）`         &lt;dbl&gt; 129416, 77558, 1075…
+## $ `A210102_住民基本台帳人口（日本人）（女）`         &lt;dbl&gt; 147962, 90166, 1170…
+## $ `A2201_住民基本台帳人口（外国人）`                 &lt;dbl&gt; 1068, 755, 1228, 12…
+## $ A4101_出生数                                       &lt;dbl&gt; 1480, 1041, 1378, 1…
+## $ A4200_死亡数                                       &lt;dbl&gt; 3566, 2435, 2750, 4…
+## $ `A5101_転入者数（日本人移動者）`                   &lt;dbl&gt; 6834, 4336, 5895, 5…
+## $ `A5102_転出者数（日本人移動者）`                   &lt;dbl&gt; 7523, 4630, 6468, 8…
+## $ A5103_転入者数                                     &lt;dbl&gt; 6959, 4415, 6010, 6…
+## $ A5104_転出者数                                     &lt;dbl&gt; 7623, 4772, 6629, 8…
+## $ `A7103_住民基本台帳世帯数（日本人）`               &lt;dbl&gt; 136407, 79783, 1083…
+## $ A9101_婚姻件数                                     &lt;dbl&gt; 938, 546, 843, 100,…
+## $ A9201_離婚件数                                     &lt;dbl&gt; 421, 262, 349, 42, …
+## $ `B1101_総面積（北方地域及び竹島を除く）`           &lt;dbl&gt; 82461, 52420, 30556…
+## $ `B1102_総面積（北方地域及び竹島を含む）`           &lt;dbl&gt; 82461, 52420, 30556…
+## $ B1103_可住地面積                                   &lt;dbl&gt; 25927, 29399, 20345…
+## $ B1104_主要湖沼面積                                 &lt;dbl&gt; 0, 0, 0, 0, 1781, 3…
+## $ C3403_製造業事業所数                               &lt;dbl&gt; 176, 154, 328, 43, …
+## $ C3404_製造業従業者数                               &lt;dbl&gt; 5778, 7257, 14178, …
+## $ E1101_幼稚園数                                     &lt;dbl&gt; 24, 10, 16, 2, 5, 3…
+## $ E1501_幼稚園在園者数                               &lt;dbl&gt; 1638, 617, 849, 61,…
+## $ E2101_小学校数                                     &lt;dbl&gt; 43, 35, 42, 4, 11, …
+## $ E2401_小学校教員数                                 &lt;dbl&gt; 885, 598, 757, 93, …
+## $ E2501_小学校児童数                                 &lt;dbl&gt; 12593, 7337, 10791,…
+## $ E3101_中学校数                                     &lt;dbl&gt; 21, 18, 26, 2, 6, 1…
+## $ E3401_中学校教員数                                 &lt;dbl&gt; 553, 369, 505, 55, …
+## $ E3501_中学校生徒数                                 &lt;dbl&gt; 7081, 4101, 5758, 6…
+## $ E3901_義務教育学校数                               &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0…
+## $ E3902_義務教育学校前期課程学級数                   &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0…
+## $ E3903_義務教育学校後期課程学級数                   &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0…
+## $ E3904_義務教育学校教員数                           &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0…
+## $ E3905_義務教育学校前期課程児童数                   &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0…
+## $ E3906_義務教育学校後期課程生徒数                   &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0…
+## $ E4101_高等学校数                                   &lt;dbl&gt; 13, 9, 14, 3, 6, 4,…
+## $ E4501_高等学校生徒数                               &lt;dbl&gt; 8108, 5710, 7512, 8…
+## $ G1201_公民館数                                     &lt;dbl&gt; 42, 15, 28, 10, 2, …
+## $ G1401_図書館数                                     &lt;dbl&gt; 2, 4, 3, 0, 3, 1, 1…
+## $ H7701_テレビ放送受信契約数                         &lt;dbl&gt; 112297, 68698, 9074…
+## $ H770101_衛星放送受信契約数                         &lt;dbl&gt; 56775, 39719, 41522…
+## $ I5101_病院数                                       &lt;dbl&gt; 20, 15, 21, 3, 6, 5…
+## $ I510110_精神科病院数                               &lt;dbl&gt; 4, 3, 5, 1, 1, 2, 1…
+## $ I510120_一般病院数                                 &lt;dbl&gt; 16, 12, 16, 2, 5, 3…
+## $ I510150_療養病床を有する病院数                     &lt;dbl&gt; 9, 5, 6, 1, 4, 0, 1…
+## $ I5102_一般診療所数                                 &lt;dbl&gt; 218, 163, 162, 17, …
+## $ I510201_有床一般診療所数                           &lt;dbl&gt; 32, 39, 25, 1, 4, 9…
+## $ I5103_歯科診療所数                                 &lt;dbl&gt; 135, 93, 95, 13, 22…
+## $ I5211_病院病床数                                   &lt;dbl&gt; 4360, 3310, 3949, 6…
+## $ I5212_一般診療所病床数                             &lt;dbl&gt; 484, 553, 344, 10, …
+## $ `I5511_介護老人保健施設数（基本票）`               &lt;dbl&gt; 14, 10, 7, 1, 2, 4,…
+## $ `I5512_介護老人保健施設定員数（基本票）`           &lt;dbl&gt; 1082, 927, 730, 100…
+## $ `J2221_保護施設数（基本票）（医療保護施設を除く）` &lt;dbl&gt; 0, 0, 0, 0, 0, 2, 0…
+## $ `J230127_介護老人福祉施設数（基本票）`             &lt;dbl&gt; 14, 11, 9, 2, 6, 3,…
+## $ `J230128_介護老人福祉施設定員数（基本票）`         &lt;dbl&gt; 844, 735, 565, 105,…
+## $ `J2304_老人福祉施設数（基本票）`                   &lt;dbl&gt; 11, 11, 8, 2, 9, 1,…
+## $ `J230411_養護老人ホーム数（基本票）`               &lt;dbl&gt; 2, 2, 1, 1, 1, 0, 0…
+## $ `J230412_養護老人ホーム定員数（基本票）`           &lt;dbl&gt; 155, 190, 50, 50, 5…
+## $ `J230421_有料老人ホーム数（基本票）`               &lt;dbl&gt; 121, 85, 54, 17, 24…
+## $ `J230422_有料老人ホーム定員数（基本票）`           &lt;dbl&gt; 3939, 2486, 2004, 4…
+## $ `J230431_軽費老人ホーム数（基本票）`               &lt;dbl&gt; 7, 4, 5, 0, 2, 1, 0…
+## $ `J230432_軽費老人ホーム定員数（基本票）`           &lt;dbl&gt; 214, 140, 170, 0, 6…
+## $ `J250204_児童福祉施設等数（基本票）`               &lt;dbl&gt; 162, 101, 105, 22, …
+## $ `J250302_保育所等数（基本票）`                     &lt;dbl&gt; 89, 65, 81, 15, 21,…
+## $ `J250303_公営保育所等数（基本票）`                 &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0…
+## $ `J2804_母子・父子福祉施設数（基本票）`             &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0…
+## $ `J2905_障害者支援施設等数（基本票）`               &lt;dbl&gt; 22, 12, 10, 7, 5, 4…
+## $ `J2906_婦人保護施設数（基本票）`                   &lt;dbl&gt; 0, 0, 0, 0, 0, 0, 0…</code></pre>
+</div>
+<div id="井上氏の得票に各変数が与える効果を調べる"
+class="section level2">
+<h2>井上氏の得票に各変数が与える効果を調べる</h2>
+<p>　各変数を標準化したうえで、井上氏の得票率変化量を目的変数とした単回帰分析をして、それぞれの効果量を調べる。</p>
+<pre class="r"><code># 自民党得票率とUC有無、HS有無、HC有無以外のすべての説明変数を人口で割る
+for(i in 8:73){
+  inoue[,i] &lt;- inoue[,i]/inoue[,7]
+}
+
+# 井上氏の得票率変化量とUC有無、HS有無、HC有無以外のすべての説明変数を標準化
+for(i in 6:73){
+  inoue[,i] &lt;- inoue[,i] %&gt;%
+    scale()
+}
+
+# 分析のためにデータフレーム形式に変える
+inoue &lt;- inoue %&gt;% 
+  as.data.frame()
+
+
+# 各変数と井上氏の得票率変化量との単回帰分析をする
+resFrame1&lt;-data.frame() # forループのたびに上書きする一時的なデータフレーム
+resFrame2&lt;-data.frame() # 最終結果を書き込むデータフレーム
+
+for(i in 6:73){
+  result &lt;- summary(lm(inoue$inoue_ratio_change~inoue[,i]))
+  
+  coef &lt;- result$coefficients
+  
+  resFrame1 &lt;- coef # i番目の出力結果を代入
+  resFrame2 &lt;- rbind(resFrame2,resFrame1) # resFrame2の末行にresFrame1を代入
+}
+
+# 結果を出力
+print(resFrame2)</code></pre>
+<pre><code>##                    Estimate  Std. Error     t value     Pr(&gt;|t|)
+## (Intercept)    0.1034210334 0.006795770 15.21844278 1.978485e-49
+## inoue[, i]    -0.0251713503 0.006797563 -3.70299647 2.191672e-04
+## (Intercept)1   0.1034210334 0.006804046 15.19993186 2.545429e-49
+## inoue[, i]1    0.0205014273 0.006805841  3.01232834 2.626854e-03
+## (Intercept)2   0.1034210334 0.006818371 15.16799770 3.929155e-49
+## inoue[, i]2   -0.0071074821 0.006820170 -1.04212688 2.974859e-01
+## (Intercept)3   0.1034210334 0.006819691 15.16506170 4.089006e-49
+## inoue[, i]3   -0.0040497670 0.006821490 -0.59367776 5.527986e-01
+## (Intercept)4   0.1034210334 0.006819955 15.16447347 4.121803e-49
+## inoue[, i]4   -0.0030924296 0.006821755 -0.45331880 6.503711e-01
+## (Intercept)5   0.1034210334 0.006818371 15.16799770 3.929155e-49
+## inoue[, i]5    0.0071074821 0.006820170  1.04212688 2.974859e-01
+## (Intercept)6   0.1034210334 0.006800764 15.20726697 2.303623e-49
+## inoue[, i]6    0.0224704034 0.006802558  3.30322842 9.735859e-04
+## (Intercept)7   0.1034210334 0.006804995 15.19781219 2.619901e-49
+## inoue[, i]7   -0.0198956120 0.006806790 -2.92290663 3.508935e-03
+## (Intercept)8   0.1034210334 0.006814635 15.17631297 3.509422e-49
+## inoue[, i]8   -0.0121256176 0.006816433 -1.77888023 7.541975e-02
+## (Intercept)9   0.1034210334 0.006807638 15.19191033 2.838891e-49
+## inoue[, i]9   -0.0181008231 0.006809434 -2.65819771 7.922075e-03
+## (Intercept)10  0.1034210334 0.006814240 15.17719289 3.467708e-49
+## inoue[, i]10  -0.0125393171 0.006816038 -1.83967839 6.597188e-02
+## (Intercept)11  0.1034210334 0.006807879 15.19137409 2.859670e-49
+## inoue[, i]11  -0.0179287385 0.006809675 -2.63283328 8.536427e-03
+## (Intercept)12  0.1034210334 0.006773164 15.26923525 9.897858e-50
+## inoue[, i]12  -0.0348548952 0.006774951 -5.14467134 2.957165e-07
+## (Intercept)13  0.1034210334 0.006815934 15.17342169 3.650041e-49
+## inoue[, i]13   0.0106531647 0.006817732  1.56256733 1.183215e-01
+## (Intercept)14  0.1034210334 0.006816809 15.17147218 3.748011e-49
+## inoue[, i]14   0.0095322327 0.006818608  1.39797347 1.622847e-01
+## (Intercept)15  0.1034210334 0.006807186 15.19291910 2.800209e-49
+## inoue[, i]15  -0.0184201440 0.006808982 -2.70527123 6.886020e-03
+## (Intercept)16  0.1034210334 0.006807172 15.19295222 2.798947e-49
+## inoue[, i]16  -0.0184305345 0.006808967 -2.70680313 6.854451e-03
+## (Intercept)17  0.1034210334 0.006804338 15.19928012 2.568100e-49
+## inoue[, i]17  -0.0203171071 0.006806133 -2.98511768 2.871005e-03
+## (Intercept)18  0.1034210334 0.006817792 15.16928641 3.860971e-49
+## inoue[, i]18  -0.0080922598 0.006819590 -1.18661965 2.355265e-01
+## (Intercept)19  0.1034210334 0.006813092 15.17974989 3.349271e-49
+## inoue[, i]19   0.0136702644 0.006814889  2.00594074 4.500454e-02
+## (Intercept)20  0.1034210334 0.006806220 15.19507739 2.719201e-49
+## inoue[, i]20   0.0190851995 0.006808015  2.80334267 5.109125e-03
+## (Intercept)21  0.1034210334 0.006819925 15.16454150 4.117996e-49
+## inoue[, i]21   0.0032177589 0.006821724  0.47169291 6.372003e-01
+## (Intercept)22  0.1034210334 0.006811366 15.18359594 3.178674e-49
+## inoue[, i]22   0.0152129157 0.006813163  2.23287115 2.567389e-02
+## (Intercept)23  0.1034210334 0.006809352 15.18808742 2.990377e-49
+## inoue[, i]23  -0.0168352028 0.006811148 -2.47171280 1.353409e-02
+## (Intercept)24  0.1034210334 0.006810980 15.18445707 3.141680e-49
+## inoue[, i]24  -0.0155371960 0.006812777 -2.28059665 2.268297e-02
+## (Intercept)25  0.1034210334 0.006800610 15.20761190 2.292833e-49
+## inoue[, i]25   0.0225586977 0.006802404  3.31628322 9.294748e-04
+## (Intercept)26  0.1034210334 0.006814115 15.17747205 3.454578e-49
+## inoue[, i]26  -0.0126677253 0.006815912 -1.85855170 6.324574e-02
+## (Intercept)27  0.1034210334 0.006813233 15.17943656 3.363565e-49
+## inoue[, i]27  -0.0135367924 0.006815030 -1.98631438 4.714234e-02
+## (Intercept)28  0.1034210334 0.006804738 15.19838671 2.599504e-49
+## inoue[, i]28   0.0200616460 0.006806533  2.94741046 3.243659e-03
+## (Intercept)29  0.1034210334 0.006820300 15.16370695 4.164934e-49
+## inoue[, i]29  -0.0008075092 0.006822100 -0.11836667 9.057897e-01
+## (Intercept)30  0.1034210334 0.006819805 15.16480758 4.103142e-49
+## inoue[, i]30  -0.0036669998 0.006821604 -0.53755679 5.909462e-01
+## (Intercept)31  0.1034210334 0.006820301 15.16370613 4.164980e-49
+## inoue[, i]31   0.0008016176 0.006822100  0.11750306 9.064739e-01
+## (Intercept)32  0.1034210334 0.006820322 15.16365847 4.167677e-49
+## inoue[, i]32  -0.0002973254 0.006822121 -0.04358255 9.652418e-01
+## (Intercept)33  0.1034210334 0.006820319 15.16366415 4.167356e-49
+## inoue[, i]33  -0.0003929833 0.006822119 -0.05760429 9.540699e-01
+## (Intercept)34  0.1034210334 0.006820318 15.16366636 4.167230e-49
+## inoue[, i]34  -0.0004244919 0.006822118 -0.06222290 9.503919e-01
+## (Intercept)35  0.1034210334 0.006814588 15.17641839 3.504398e-49
+## inoue[, i]35  -0.0121759251 0.006816385 -1.78627297 7.421499e-02
+## (Intercept)36  0.1034210334 0.006820324 15.16365346 4.167961e-49
+## inoue[, i]36   0.0001736930 0.006822124  0.02546026 9.796905e-01
+## (Intercept)37  0.1034210334 0.006817750 15.16937968 3.856082e-49
+## inoue[, i]37   0.0081589083 0.006819548  1.19640010 2.316902e-01
+## (Intercept)38  0.1034210334 0.006817242 15.17050896 3.797378e-49
+## inoue[, i]38   0.0089264200 0.006819041  1.30904337 1.906785e-01
+## (Intercept)39  0.1034210334 0.006750588 15.32029920 4.924500e-50
+## inoue[, i]39  -0.0423487804 0.006752369 -6.27169201 4.413099e-10
+## (Intercept)40  0.1034210334 0.006793024 15.22459415 1.819473e-49
+## inoue[, i]40  -0.0265387002 0.006794816 -3.90572751 9.723773e-05
+## (Intercept)41  0.1034210334 0.006820321 15.16366115 4.167525e-49
+## inoue[, i]41  -0.0003457563 0.006822120 -0.05068165 9.595845e-01
+## (Intercept)42  0.1034210334 0.006818514 15.16767977 3.946159e-49
+## inoue[, i]42   0.0068427349 0.006820313  1.00328758 3.158503e-01
+## (Intercept)43  0.1034210334 0.006820097 15.16415939 4.139422e-49
+## inoue[, i]43  -0.0024314552 0.006821896 -0.35641927 7.215663e-01
+## (Intercept)44  0.1034210334 0.006818867 15.16689491 3.988453e-49
+## inoue[, i]44   0.0061404004 0.006820666  0.90026412 3.680942e-01
+## (Intercept)45  0.1034210334 0.006818389 15.16795648 3.931355e-49
+## inoue[, i]45  -0.0070737216 0.006820188 -1.03717396 2.997872e-01
+## (Intercept)46  0.1034210334 0.006818040 15.16873291 3.890110e-49
+## inoue[, i]46  -0.0076848058 0.006819839 -1.12683096 2.599567e-01
+## (Intercept)47  0.1034210334 0.006818515 15.16767749 3.946282e-49
+## inoue[, i]47  -0.0068407981 0.006820314 -1.00300345 3.159873e-01
+## (Intercept)48  0.1034210334 0.006814990 15.17552236 3.547329e-49
+## inoue[, i]48   0.0117414194 0.006816788  1.72242697 8.515545e-02
+## (Intercept)49  0.1034210334 0.006811072 15.18425090 3.150498e-49
+## inoue[, i]49  -0.0154601805 0.006812869 -2.26926125 2.336447e-02
+## (Intercept)50  0.1034210334 0.006810589 15.18532894 3.104661e-49
+## inoue[, i]50  -0.0158587109 0.006812386 -2.32792323 2.002102e-02
+## (Intercept)51  0.1034210334 0.006804646 15.19859217 2.592248e-49
+## inoue[, i]51  -0.0201206864 0.006806441 -2.95612450 3.153820e-03
+## (Intercept)52  0.1034210334 0.006820317 15.16366919 4.167070e-49
+## inoue[, i]52   0.0004615640 0.006822116  0.06765701 9.460658e-01
+## (Intercept)53  0.1034210334 0.006806883 15.19359608 2.774544e-49
+## inoue[, i]53  -0.0186313363 0.006808679 -2.73640987 6.269361e-03
+## (Intercept)54  0.1034210334 0.006795891 15.21817192 1.985796e-49
+## inoue[, i]54  -0.0251093912 0.006797684 -3.69381582 2.271784e-04
+## (Intercept)55  0.1034210334 0.006814384 15.17687104 3.482908e-49
+## inoue[, i]55   0.0123896087 0.006816182  1.81767570 6.927165e-02
+## (Intercept)56  0.1034210334 0.006817819 15.16922601 3.864140e-49
+## inoue[, i]56   0.0080488015 0.006819617  1.18024238 2.380520e-01
+## (Intercept)57  0.1034210334 0.006819027 15.16653748 4.007863e-49
+## inoue[, i]57   0.0057923538 0.006820826  0.84921585 3.958685e-01
+## (Intercept)58  0.1034210334 0.006819646 15.16516212 4.083433e-49
+## inoue[, i]58   0.0041914052 0.006821445  0.61444536 5.389949e-01
+## (Intercept)59  0.1034210334 0.006818685 15.16729915 3.966614e-49
+## inoue[, i]59  -0.0065116133 0.006820484 -0.95471429 3.398440e-01
+## (Intercept)60  0.1034210334 0.006813402 15.17905934 3.380853e-49
+## inoue[, i]60   0.0133743246 0.006815200  1.96242599 4.985912e-02
+## (Intercept)61  0.1034210334 0.006807753 15.19165557 2.848744e-49
+## inoue[, i]61   0.0180192757 0.006809549  2.64617768 8.208093e-03
+## (Intercept)62  0.1034210334 0.006817540 15.16984732 3.831664e-49
+## inoue[, i]62  -0.0084851847 0.006819338 -1.24428275 2.135495e-01
+## (Intercept)63  0.1034210334 0.006816083 15.17308865 3.666595e-49
+## inoue[, i]63  -0.0104702044 0.006817881 -1.53569766 1.247796e-01
+## (Intercept)64  0.1034210334 0.006810546 15.18542404 3.100649e-49
+## inoue[, i]64  -0.0158933840 0.006812343 -2.33302755 1.975092e-02
+## (Intercept)65  0.1034210334 0.006813310 15.17926357 3.371482e-49
+## inoue[, i]65   0.0134625309 0.006815108  1.97539514 4.836830e-02
+## (Intercept)66  0.1034210334 0.006819870 15.16466418 4.111141e-49
+## inoue[, i]66  -0.0034322024 0.006821669 -0.50313236 6.149297e-01
+## (Intercept)67  0.1034210334 0.006819862 15.16468153 4.110172e-49
+## inoue[, i]67   0.0034614697 0.006821661  0.50742329 6.119169e-01</code></pre>
+</div>
+<div id="マッチングをしていく" class="section level2">
+<h2>マッチングをしていく</h2>
+<p>　67項目ある変数全部を考慮してマッチングするのがモデルA、67項目のうち効果量の大きい9項目にしぼったものがモデルB、8分野のうちそれぞれ効果量が最大の8項目にしぼったものがモデルCとする。いずれのモデルでも、これらのほかに人口と、井上氏を除いた自民党全体の得票率はマッチングの要素に組み込む。A、B、Cそれぞれのモデルについて、「遺伝的マッチング」と「最近傍マッチング」を適用する。<br />
+　なお、遺伝的マッチングは本気でやるとかなり時間がかかる。以下のコードでは時間短縮のためにpop.sizeなどを小さくしてある。その分、マッチングの精度は低くなっているが、ちゃんとやれば、最近傍マッチングよりだいぶ良い結果が出る。</p>
+<pre class="r"><code># 遺伝的マッチングの条件設定
+pop.size &lt;- 10#00 
+nboots &lt;- 10#00 
+# change to 1000 later
+
+
+# モデルAの遺伝的マッチング（本気でやると私のPCで丸2日くらいの時間がかかった）
+
+model_a_g &lt;- matchit(UC有無 ~ ldp_ratio_change +
+                             `A2301_住民基本台帳人口（総数）`+
+                             `A2101_住民基本台帳人口（日本人）`+
+                             `A210101_住民基本台帳人口（日本人）（男）`+
+                             `A210102_住民基本台帳人口（日本人）（女）`+
+                             `A2201_住民基本台帳人口（外国人）`+
+                             `A4101_出生数` +
+                             `A4200_死亡数`+
+                             `A5101_転入者数（日本人移動者）`+
+                             `A5102_転出者数（日本人移動者）`+
+                             `A5103_転入者数`+
+                             `A5104_転出者数`+
+                             `A7103_住民基本台帳世帯数（日本人）`+
+                             `A9101_婚姻件数`+
+                             `A9201_離婚件数`+
+                             `B1101_総面積（北方地域及び竹島を除く）`+
+                             `B1102_総面積（北方地域及び竹島を含む）`+
+                             `B1103_可住地面積`+
+                             `B1104_主要湖沼面積`+
+                             `C3403_製造業事業所数`+
+                             `C3404_製造業従業者数`+
+                             `E1101_幼稚園数`+
+                             `E1501_幼稚園在園者数`+
+                             `E2101_小学校数`+
+                             `E2401_小学校教員数`+
+                             `E2501_小学校児童数`+
+                             `E3101_中学校数`+
+                             `E3401_中学校教員数`+
+                             `E3501_中学校生徒数`+
+                             `E3901_義務教育学校数`+
+                             `E3902_義務教育学校前期課程学級数`+
+                             `E3903_義務教育学校後期課程学級数`+
+                             `E3904_義務教育学校教員数`+
+                             `E3905_義務教育学校前期課程児童数`+
+                             `E3906_義務教育学校後期課程生徒数`+
+                             `E4101_高等学校数`+
+                             `E4501_高等学校生徒数`+
+                             `G1201_公民館数`+
+                             `G1401_図書館数`+
+                             `H7701_テレビ放送受信契約数`+
+                             `H770101_衛星放送受信契約数`+
+                             `I5101_病院数`+
+                             `I510110_精神科病院数`+
+                             `I510120_一般病院数`+
+                             `I510150_療養病床を有する病院数`+
+                             `I5102_一般診療所数`+
+                             `I510201_有床一般診療所数`+
+                             `I5103_歯科診療所数`+
+                             `I5211_病院病床数`+
+                             `I5212_一般診療所病床数`+
+                             `I5511_介護老人保健施設数（基本票）`+
+                             `I5512_介護老人保健施設定員数（基本票）`+
+                             `J2221_保護施設数（基本票）（医療保護施設を除く）`+
+                             `J230127_介護老人福祉施設数（基本票）`+
+                             `J230128_介護老人福祉施設定員数（基本票）`+
+                             `J2304_老人福祉施設数（基本票）`+
+                             `J230411_養護老人ホーム数（基本票）`+
+                             `J230412_養護老人ホーム定員数（基本票）`+
+                             `J230421_有料老人ホーム数（基本票）`+
+                             `J230422_有料老人ホーム定員数（基本票）`+
+                             `J230431_軽費老人ホーム数（基本票）`+
+                             `J230432_軽費老人ホーム定員数（基本票）`+
+                             `J250204_児童福祉施設等数（基本票）`+
+                             `J250302_保育所等数（基本票）`+
+                             `J250303_公営保育所等数（基本票）`+
+                             `J2804_母子・父子福祉施設数（基本票）`+
+                             `J2905_障害者支援施設等数（基本票）`+
+                             `J2906_婦人保護施設数（基本票）`,
+                 method = &quot;genetic&quot;,
+                 distance = &quot;mahalanobis&quot;,
+                 pop.size = pop.size, 
+                 nboots = nboots, 
+                 replace = TRUE,
+                 verbose = TRUE,
+                 estimand = &quot;ATT&quot;,
+                 data=inoue)</code></pre>
+
+<pre class="r"><code># モデルBの遺伝的マッチング
+
+model_b_g &lt;- matchit(UC有無 ~ ldp_ratio_change +
+                              `H7701_テレビ放送受信契約数` +
+                              `A7103_住民基本台帳世帯数（日本人）` +
+                              `H770101_衛星放送受信契約数` +
+                              `J230127_介護老人福祉施設数（基本票）` +
+                              `E2501_小学校児童数` +
+                              `A4101_出生数` +
+                              `A2301_住民基本台帳人口（総数）` +
+                              `B1103_可住地面積` +
+                              `I5512_介護老人保健施設定員数（基本票）` +
+                              `E3501_中学校生徒数` ,
+                     method = &quot;genetic&quot;,
+                     distance = &quot;mahalanobis&quot;,
+                     pop.size = pop.size, 
+                     nboots = nboots, 
+                     replace = TRUE,
+                     verbose = TRUE,
+                     estimand = &quot;ATT&quot;,
+                     data=inoue)</code></pre>
+
+<pre class="r"><code># モデルCの遺伝的マッチング
+
+model_c_g &lt;- matchit(UC有無 ~  ldp_ratio_change +
+                              `A2301_住民基本台帳人口（総数）`+
+                              `A7103_住民基本台帳世帯数（日本人）`+
+                              `B1103_可住地面積`+
+                              `C3404_製造業従業者数`+
+                              `E2501_小学校児童数`+
+                              `G1401_図書館数`+
+                              `H7701_テレビ放送受信契約数`+
+                              `I5512_介護老人保健施設定員数（基本票）`+
+                              `J230128_介護老人福祉施設定員数（基本票）`,
+                     method = &quot;genetic&quot;,
+                     distance = &quot;mahalanobis&quot;,
+                     pop.size = pop.size, 
+                     nboots = nboots, 
+                     replace = TRUE,
+                     verbose = TRUE,
+                     estimand = &quot;ATT&quot;,
+                     data=inoue)</code></pre>
+
+<pre class="r"><code># モデルAの最近傍マッチング
+
+model_a_n &lt;- matchit(UC有無 ~ ldp_ratio_change +
+                             `A2301_住民基本台帳人口（総数）`+
+                             `A2101_住民基本台帳人口（日本人）`+
+                             `A210101_住民基本台帳人口（日本人）（男）`+
+                             `A210102_住民基本台帳人口（日本人）（女）`+
+                             `A2201_住民基本台帳人口（外国人）`+
+                             `A4101_出生数`+`A4200_死亡数`+
+                             `A5101_転入者数（日本人移動者）`+
+                             `A5102_転出者数（日本人移動者）`+
+                             `A5103_転入者数`+
+                             `A5104_転出者数`+
+                             `A7103_住民基本台帳世帯数（日本人）`+
+                             `A9101_婚姻件数`+
+                             `A9201_離婚件数`+
+                             `B1101_総面積（北方地域及び竹島を除く）`+
+                             `B1102_総面積（北方地域及び竹島を含む）`+
+                             `B1103_可住地面積`+
+                             `B1104_主要湖沼面積`+
+                             `C3403_製造業事業所数`+
+                             `C3404_製造業従業者数`+
+                             `E1101_幼稚園数`+
+                             `E1501_幼稚園在園者数`+
+                             `E2101_小学校数`+
+                             `E2401_小学校教員数`+
+                             `E2501_小学校児童数`+
+                             `E3101_中学校数`+
+                             `E3401_中学校教員数`+
+                             `E3501_中学校生徒数`+
+                             `E3901_義務教育学校数`+
+                             `E3902_義務教育学校前期課程学級数`+
+                             `E3903_義務教育学校後期課程学級数`+
+                             `E3904_義務教育学校教員数`+
+                             `E3905_義務教育学校前期課程児童数`+
+                             `E3906_義務教育学校後期課程生徒数`+
+                             `E4101_高等学校数`+
+                             `E4501_高等学校生徒数`+
+                             `G1201_公民館数`+
+                             `G1401_図書館数`+
+                             `H7701_テレビ放送受信契約数`+
+                             `H770101_衛星放送受信契約数`+
+                             `I5101_病院数`+
+                             `I510110_精神科病院数`+
+                             `I510120_一般病院数`+
+                             `I510150_療養病床を有する病院数`+
+                             `I5102_一般診療所数`+
+                             `I510201_有床一般診療所数`+
+                             `I5103_歯科診療所数`+
+                             `I5211_病院病床数`+
+                             `I5212_一般診療所病床数`+
+                             `I5511_介護老人保健施設数（基本票）`+
+                             `I5512_介護老人保健施設定員数（基本票）`+
+                             `J2221_保護施設数（基本票）（医療保護施設を除く）`+
+                             `J230127_介護老人福祉施設数（基本票）`+
+                             `J230128_介護老人福祉施設定員数（基本票）`+
+                             `J2304_老人福祉施設数（基本票）`+
+                             `J230411_養護老人ホーム数（基本票）`+
+                             `J230412_養護老人ホーム定員数（基本票）`+
+                             `J230421_有料老人ホーム数（基本票）`+
+                             `J230422_有料老人ホーム定員数（基本票）`+
+                             `J230431_軽費老人ホーム数（基本票）`+
+                             `J230432_軽費老人ホーム定員数（基本票）`+
+                             `J250204_児童福祉施設等数（基本票）`+
+                             `J250302_保育所等数（基本票）`+
+                             `J250303_公営保育所等数（基本票）`+
+                             `J2804_母子・父子福祉施設数（基本票）`+
+                             `J2905_障害者支援施設等数（基本票）`+
+                             `J2906_婦人保護施設数（基本票）`,
+                 mehod = &quot;nearest&quot;,
+                 distance = &quot;mahalanobis&quot;,
+                 data=inoue)
+
+
+# モデルBの最近傍マッチング
+
+model_b_n &lt;- matchit(UC有無 ~ ldp_ratio_change +
+                              `H7701_テレビ放送受信契約数` +
+                              `A7103_住民基本台帳世帯数（日本人）` +
+                              `H770101_衛星放送受信契約数` +
+                              `J230127_介護老人福祉施設数（基本票）` +
+                              `E2501_小学校児童数` +
+                              `A4101_出生数` +
+                              `A2301_住民基本台帳人口（総数）` +
+                              `B1103_可住地面積` +
+                              `I5512_介護老人保健施設定員数（基本票）` +
+                              `E3501_中学校生徒数` ,
+                     mehod = &quot;nearest&quot;,
+                     distance = &quot;mahalanobis&quot;,
+                     data=inoue)
+
+# モデルCの最近傍マッチング
+
+model_c_n &lt;- matchit(UC有無 ~  ldp_ratio_change +
+                              `A2301_住民基本台帳人口（総数）`+
+                              `A7103_住民基本台帳世帯数（日本人）`+
+                              `B1103_可住地面積`+
+                              `C3404_製造業従業者数`+
+                              `E2501_小学校児童数`+
+                              `G1401_図書館数`+
+                              `H7701_テレビ放送受信契約数`+
+                              `I5512_介護老人保健施設定員数（基本票）`+
+                              `J230128_介護老人福祉施設定員数（基本票）`,
+                     method = &quot;nearest&quot;,
+                     distance = &quot;mahalanobis&quot;,
+                     estimand = &quot;ATT&quot;,
+                     data=inoue)</code></pre>
+</div>
+<div id="マッチングの結果を確認" class="section level2">
+<h2>マッチングの結果を確認</h2>
+<p>　共変量のバランスを確かめる。いずれのモデルでも遺伝的マッチングのほうがAbsolute
+Standardized Mean
+Differencesの平均値が小さくなる。つまり、よりよいマッチングができている。</p>
+<pre class="r"><code># モデルA、遺伝的
+balance_a_g &lt;- bal.tab(model_a_g,un=TRUE)
+balance_a_g$Balance %&gt;%
+  as_tibble() %&gt;%
+  mutate(un_abs_mean_dif=abs(Diff.Un),
+         adj_abs_mean_dif=abs(Diff.Adj)) %&gt;%
+  summarize(mean(un_abs_mean_dif),
+            mean(adj_abs_mean_dif))</code></pre>
+<pre><code>## # A tibble: 1 × 2
+##   `mean(un_abs_mean_dif)` `mean(adj_abs_mean_dif)`
+##                     &lt;dbl&gt;                    &lt;dbl&gt;
+## 1                    1.26                    0.110</code></pre>
+<pre class="r"><code># モデルA、最近傍
+balance_a_n &lt;- bal.tab(model_a_n,un=TRUE)
+balance_a_n$Balance %&gt;%
+  as_tibble() %&gt;%
+  mutate(un_abs_mean_dif=abs(Diff.Un),
+         adj_abs_mean_dif=abs(Diff.Adj)) %&gt;%
+  summarize(mean(un_abs_mean_dif),
+            mean(adj_abs_mean_dif))</code></pre>
+<pre><code>## # A tibble: 1 × 2
+##   `mean(un_abs_mean_dif)` `mean(adj_abs_mean_dif)`
+##                     &lt;dbl&gt;                    &lt;dbl&gt;
+## 1                    1.26                    0.144</code></pre>
+<pre class="r"><code># モデルB、遺伝的
+balance_b_g &lt;- bal.tab(model_b_g,un=TRUE)
+balance_b_g$Balance %&gt;%
+  as_tibble() %&gt;%
+  mutate(un_abs_mean_dif=abs(Diff.Un),
+         adj_abs_mean_dif=abs(Diff.Adj)) %&gt;%
+  summarize(mean(un_abs_mean_dif),
+            mean(adj_abs_mean_dif))</code></pre>
+<pre><code>## # A tibble: 1 × 2
+##   `mean(un_abs_mean_dif)` `mean(adj_abs_mean_dif)`
+##                     &lt;dbl&gt;                    &lt;dbl&gt;
+## 1                    1.21                    0.116</code></pre>
+<pre class="r"><code># モデルB、最近傍
+balance_b_n &lt;- bal.tab(model_b_n,un=TRUE)
+balance_b_n$Balance %&gt;%
+  as_tibble() %&gt;%
+  mutate(un_abs_mean_dif=abs(Diff.Un),
+         adj_abs_mean_dif=abs(Diff.Adj)) %&gt;%
+  summarize(mean(un_abs_mean_dif),
+            mean(adj_abs_mean_dif))</code></pre>
+<pre><code>## # A tibble: 1 × 2
+##   `mean(un_abs_mean_dif)` `mean(adj_abs_mean_dif)`
+##                     &lt;dbl&gt;                    &lt;dbl&gt;
+## 1                    1.21                    0.130</code></pre>
+<pre class="r"><code># モデルC、遺伝的
+balance_c_g &lt;- bal.tab(model_c_g,un=TRUE)
+balance_c_g$Balance %&gt;%
+  as_tibble() %&gt;%
+  mutate(un_abs_mean_dif=abs(Diff.Un),
+         adj_abs_mean_dif=abs(Diff.Adj)) %&gt;%
+  summarize(mean(un_abs_mean_dif),
+            mean(adj_abs_mean_dif))</code></pre>
+<pre><code>## # A tibble: 1 × 2
+##   `mean(un_abs_mean_dif)` `mean(adj_abs_mean_dif)`
+##                     &lt;dbl&gt;                    &lt;dbl&gt;
+## 1                    1.41                   0.0784</code></pre>
+<pre class="r"><code># モデルC、最近傍
+balance_c_n &lt;- bal.tab(model_c_n,un=TRUE)
+balance_c_n$Balance %&gt;%
+  as_tibble() %&gt;%
+  mutate(un_abs_mean_dif=abs(Diff.Un),
+         adj_abs_mean_dif=abs(Diff.Adj)) %&gt;%
+  summarize(mean(un_abs_mean_dif),
+            mean(adj_abs_mean_dif))</code></pre>
+<pre><code>## # A tibble: 1 × 2
+##   `mean(un_abs_mean_dif)` `mean(adj_abs_mean_dif)`
+##                     &lt;dbl&gt;                    &lt;dbl&gt;
+## 1                    1.41                    0.127</code></pre>
+</div>
+<div id="教団施設の効果を確認" class="section level2">
+<h2>教団施設の効果を確認</h2>
+<p>　マッチングした市区町村どうしを比べることで、教団施設の有無によって井上氏の得票率変化量が平均してどれだけ変わるかを見てみる。上記の例では遺伝的マッチングでpop.sizeなどを小さくしているため、ポスターに表記した数値と完全には一致しないが、いずれのモデル/マッチング法でも、井上氏の得票率増加量は教団施設のある市区町村において、0.1%ポイント前後多いという結果になっている。</p>
+<pre class="r"><code># モデルA、遺伝的
+data_a_g &lt;- get_matches(model_a_g) %&gt;% 
+  as_tibble()
+summary(lm(inoue_ratio_change~UC有無,data=data_a_g))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = inoue_ratio_change ~ UC有無, data = data_a_g)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -1.60113 -0.08039 -0.03137  0.05342  1.56961 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  0.11644    0.01089   10.69  &lt; 2e-16 ***
+## UC有無       0.09365    0.01540    6.08 2.34e-09 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.1753 on 516 degrees of freedom
+## Multiple R-squared:  0.06684,    Adjusted R-squared:  0.06504 
+## F-statistic: 36.96 on 1 and 516 DF,  p-value: 2.345e-09</code></pre>
+<pre class="r"><code># モデルA、最近傍
+data_a_n &lt;- match.data(model_a_n)
+summary(lm(inoue_ratio_change ~ UC有無, data = data_a_n))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = inoue_ratio_change ~ UC有無, data = data_a_n)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -1.60113 -0.08607 -0.02105  0.06428  1.56961 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  0.11801    0.01087  10.861  &lt; 2e-16 ***
+## UC有無       0.09208    0.01537   5.992 3.88e-09 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.1749 on 516 degrees of freedom
+## Multiple R-squared:  0.06506,    Adjusted R-squared:  0.06325 
+## F-statistic: 35.91 on 1 and 516 DF,  p-value: 3.885e-09</code></pre>
+<pre class="r"><code># モデルB、遺伝的
+data_b_g &lt;- match.data(model_b_g)
+summary(lm(inoue_ratio_change ~ UC有無, data = data_b_g))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = inoue_ratio_change ~ UC有無, data = data_b_g)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -1.71881 -0.08296 -0.01296  0.06517  1.56961 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  0.09211    0.01670   5.516 6.19e-08 ***
+## UC有無       0.11798    0.02099   5.622 3.51e-08 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.2045 on 407 degrees of freedom
+## Multiple R-squared:  0.07206,    Adjusted R-squared:  0.06978 
+## F-statistic: 31.61 on 1 and 407 DF,  p-value: 3.514e-08</code></pre>
+<pre class="r"><code># モデルB、最近傍
+data_b_n &lt;- match.data(model_b_n)
+summary(lm(inoue_ratio_change ~ UC有無, data = data_b_n))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = inoue_ratio_change ~ UC有無, data = data_b_n)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -1.60113 -0.08016 -0.02282  0.05382  1.56961 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  0.10972    0.01059  10.365  &lt; 2e-16 ***
+## UC有無       0.10037    0.01497   6.705  5.3e-11 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.1704 on 516 degrees of freedom
+## Multiple R-squared:  0.08014,    Adjusted R-squared:  0.07836 
+## F-statistic: 44.96 on 1 and 516 DF,  p-value: 5.301e-11</code></pre>
+<pre class="r"><code># モデルC、遺伝的
+data_c_g &lt;- get_matches(model_c_g)
+summary(lm(inoue_ratio_change ~ UC有無, data = data_c_g))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = inoue_ratio_change ~ UC有無, data = data_c_g)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -1.60113 -0.07982 -0.02177  0.06432  1.56961 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  0.11914    0.01091  10.915  &lt; 2e-16 ***
+## UC有無       0.09096    0.01544   5.893 6.87e-09 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.1757 on 516 degrees of freedom
+## Multiple R-squared:  0.06305,    Adjusted R-squared:  0.06123 
+## F-statistic: 34.72 on 1 and 516 DF,  p-value: 6.87e-09</code></pre>
+<pre class="r"><code># モデルC、最近傍
+data_c_n &lt;- get_matches(model_c_n)
+summary(lm(inoue_ratio_change ~ UC有無, data = data_c_n))</code></pre>
+<pre><code>## 
+## Call:
+## lm(formula = inoue_ratio_change ~ UC有無, data = data_c_n)
+## 
+## Residuals:
+##      Min       1Q   Median       3Q      Max 
+## -1.60113 -0.08461 -0.02315  0.06351  1.56961 
+## 
+## Coefficients:
+##             Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)  0.11271    0.01082  10.413  &lt; 2e-16 ***
+## UC有無       0.09739    0.01531   6.362 4.39e-10 ***
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## Residual standard error: 0.1742 on 516 degrees of freedom
+## Multiple R-squared:  0.07274,    Adjusted R-squared:  0.07094 
+## F-statistic: 40.48 on 1 and 516 DF,  p-value: 4.389e-10</code></pre>
+</div>
+<div id="良いマッチングができていることをグラフで確認"
+class="section level2">
+<h2>良いマッチングができていることをグラフで確認</h2>
+<p>　モデルAの遺伝的マッチングを例に、共変量のバランスがマッチングによって大幅に改善されていることを確認する。</p>
+<pre class="r"><code>love.plot(model_a_g,
+          threshold = 0.1,
+          abs = TRUE,colors=c(&quot;green&quot;,&quot;purple&quot;),
+          sample.names = c(&quot;マッチングなし&quot;,&quot;マッチングあり&quot;))</code></pre>
+<pre><code>## Warning: Large mean differences detected; you may not be using standardized mean
+## differences for continuous variables.</code></pre>
+<p><img src="%E9%81%B8%E6%8C%99%E5%AD%A6%E4%BC%9A_%E7%99%BA%E8%A1%A8%E7%94%A8_files/figure-html/unnamed-chunk-7-1.png" width="768" /></p>
+</div>
+<div id="井上氏の得票率変化量の違いをグラフで確認"
+class="section level2">
+<h2>井上氏の得票率変化量の違いをグラフで確認</h2>
+<p>　マッチングした各市区町村のペアにおいて、教団施設の有無によって井上氏の得票率変化量がどれだけ違うのかをグラフで確認する。右へ行くほど投票者数の多い市区町村になっている。</p>
+<pre class="r"><code>data_a_g %&gt;%
+  as_tibble() %&gt;%
+  dplyr::select(subclass,
+                都道府県市区町村,
+                UC有無,
+                inoue_ratio_change) %&gt;%
+  left_join(read_csv(&quot;data/UC_inoue.csv&quot;) %&gt;%
+              filter(年==2022) %&gt;%
+              dplyr::select(都道府県市区町村,
+                            投票者数)) %&gt;%
+  group_by(subclass) %&gt;%
+  mutate(total_vote=sum(投票者数)) %&gt;%
+  ggplot(aes(reorder(subclass,total_vote),
+             inoue_ratio_change,
+             color=as.factor(UC有無))) +
+  geom_point() +
+  labs(x=&quot;&quot;) +
+  theme_minimal() +
+  theme(legend.position = &quot;bottom&quot;)</code></pre>
+<pre><code>## Rows: 3792 Columns: 167
+## ── Column specification ──────────────────────
+## Delimiter: &quot;,&quot;
+## chr   (1): 都道府県市区町村
+## dbl (166): 年, 自民得票計, 井上得票, 投票者数, UC有無, HS有無, HC有無, A2101_住民基本台帳人口（日本人）, A210...
+## 
+## ℹ Use `spec()` to retrieve the full column specification for this data.
+## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+## Joining, by = &quot;都道府県市区町村&quot;</code></pre>
+<p><img src="%E9%81%B8%E6%8C%99%E5%AD%A6%E4%BC%9A_%E7%99%BA%E8%A1%A8%E7%94%A8_files/figure-html/unnamed-chunk-8-1.png" width="100%" /></p>
+<p>以上。</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
